@@ -98,7 +98,7 @@
     flex-wrap: wrap;
     padding: 0 15px;
     max-width: 1250px;
-    margin: 50px 0;
+    margin: 50px auto;
     justify-content: center;
 }
 
