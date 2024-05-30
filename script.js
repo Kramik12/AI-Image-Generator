@@ -8,7 +8,7 @@ const imageGallery = document.querySelector(".image-gallery");
     const imgElement = imgCard.querySelector("img");
 
     //Set the image source to the AI-generated image data
-    const aiGeneratedImg = `data:image/jpeg;base64,${imgObject.b64_json}`;
+    //const aiGeneratedImg = `data:image/jpeg;base64,${imgObject.b64_json}`;
     imgElement.src = aiGeneratedImg;
 
     //When the image is loaded, remove the loading class
@@ -21,7 +21,7 @@ const imageGallery = document.querySelector(".image-gallery");
 const generateAiImages = async (userPrompt, userImageQuantity) => {
     try {
         // Send a request to the OpenAI to generate images based on user inputs
-        const response = await fetch("https://api.openai.com/v1/images/generations", {
+       // const response = await fetch("https://api.openai.com/v1/images/generations", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json",
